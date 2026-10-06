@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Анкета</title>
+</head>
+
+<body>
+
+    <h1>Анкета</h1>
+
+    <form action="questionnaire.html" method="get">
+
+        <fieldset>
+            <legend>Особиста інформація</legend>
+
+            <label for="name">Ім'я:</label>
+            <input type="text"
+                   id="name"
+                   name="name"
+                   value=""
+                   placeholder="Введіть ім'я"
+                   required
+                   tabindex="1">
+
+            <br><br>
+
+            <label for="surname">Прізвище:</label>
+            <input type="text"
+                   id="surname"
+                   name="surname"
+                   value=""
+                   placeholder="Введіть прізвище"
+                   tabindex="2">
+
+            <br><br>
+
+            <label for="about">Про себе:</label><br>
+            <textarea id="about"
+                      name="about"
+                      placeholder="Напишіть про себе"
+                      tabindex="3"></textarea>
+
+            <br><br>
+
+            <label for="password">Пароль:</label>
+            <input type="password"
+                   id="password"
+                   name="password"
+                   value=""
+                   placeholder="Abc123"
+                   pattern="(?=.*[A-Z])(?=.*[a-z])(?=.*[0-9])[A-Za-z0-9]{6}"
+                   required
+                   tabindex="4">
+
+            <br><br>
+
+            <label for="email">Email:</label>
+            <input type="email"
+                   id="email"
+                   name="email"
+                   value=""
+                   placeholder="example@gmail.com"
+                   autocomplete="off"
+                   pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}"
+                   required
+                   tabindex="5">
+
+            <br><br>
+
+            <label for="phone">Телефон:</label>
+            <input type="tel"
+                   id="phone"
+                   name="phone"
+                   value=""
+                   placeholder="+380XXXXXXXXX"
+                   pattern="\+380[0-9]{9}"
+                   tabindex="6">
+
+            <br><br>
+
+            <label for="date">Дата:</label>
+            <input type="date"
+                   id="date"
+                   name="date"
+                   value=""
+                   tabindex="7">
+
+        </fieldset>
+
+        <br>
+
+        <fieldset>
+            <legend>Вибір</legend>
+
+            <p>Стать:</p>
+
+            <label>
+                <input type="radio"
+                       name="gender"
+                       value="male"
+                       tabindex="8">
+                Чоловіча
+            </label>
+
+            <label>
+                <input type="radio"
+                       name="gender"
+                       value="female"
+                       tabindex="9">
+                Жіноча
+            </label>
+
+            <label>
+                <input type="radio"
+                       name="gender"
+                       value="other"
+                       tabindex="10">
+                Інше
+            </label>
+
+            <p>Курс:</p>
+
+            <label>
+                <input type="radio"
+                       name="course"
+                       value="1"
+                       tabindex="11">
+                1
+            </label>
+
+            <label>
+                <input type="radio"
+                       name="course"
+                       value="2"
+                       checked
+                       tabindex="12">
+                2
+            </label>
+
+            <label>
+                <input type="radio"
+                       name="course"
+                       value="3"
+                       tabindex="13">
+                3
+            </label>
+
+            <p>Інтереси:</p>
+
+            <label>
+                <input type="checkbox"
+                       name="interest"
+                       value="sport"
+                       tabindex="14">
+                Спорт
+            </label>
+
+            <label>
+                <input type="checkbox"
+                       name="interest"
+                       value="music"
+                       tabindex="15">
+                Музика
+            </label>
+
+            <label>
+                <input type="checkbox"
+                       name="interest"
+                       value="games"
+                       tabindex="16">
+                Ігри
+            </label>
+
+            <label>
+                <input type="checkbox"
+                       name="interest"
+                       value="programming"
+                       tabindex="17">
+                Програмування
+            </label>
+
+        </fieldset>
+
+        <br>
+
+        <fieldset>
+            <legend>Списки</legend>
+
+            <label for="list1">Список:</label>
+
+            <select id="list1"
+                    name="list1"
+                    tabindex="18">
+
+                <option value="1">Перше</option>
+                <option value="2">Друге</option>
+                <option value="3" selected>Третє</option>
+                <option value="4">Четверте</option>
+                <option value="5">П'яте</option>
+
+            </select>
+
+            <br><br>
+
+            <label for="list2">Множинний вибір:</label>
+
+            <select id="list2"
+                    name="list2"
+                    multiple
+                    size="6"
+                    tabindex="19">
+
+                <option value="1">Перше</option>
+                <option value="2">Друге</option>
+                <option value="3">Третє</option>
+                <option value="4">Четверте</option>
+                <option value="5">П'яте</option>
+                <option value="6">Шосте</option>
+
+            </select>
+
+            <br><br>
+
+            <label for="list3">Групи:</label>
+
+            <select id="list3"
+                    name="list3"
+                    tabindex="20">
+
+                <optgroup label="Група 1">
+                    <option value="1">Пункт 1</option>
+                    <option value="2">Пункт 2</option>
+                    <option value="3">Пункт 3</option>
+                </optgroup>
+
+                <optgroup label="Група 2">
+                    <option value="4">Пункт 1</option>
+                    <option value="5">Пункт 2</option>
+                    <option value="6">Пункт 3</option>
+                </optgroup>
+
+                <optgroup label="Група 3">
+                    <option value="7">Пункт 1</option>
+                    <option value="8">Пункт 2</option>
+                    <option value="9">Пункт 3</option>
+                </optgroup>
+
+                <optgroup label="Група 4">
+                    <option value="10">Пункт 1</option>
+                    <option value="11">Пункт 2</option>
+                    <option value="12">Пункт 3</option>
+                </optgroup>
+
+            </select>
+
+            <br><br>
+
+            <label for="city">Підказка:</label>
+
+            <input type="text"
+                   id="city"
+                   name="city"
+                   value=""
+                   list="cities"
+                   placeholder="Введіть значення"
+                   tabindex="21">
+
+            <datalist id="cities">
+                <option value="Перше">
+                <option value="Друге">
+                <option value="Третє">
+                <option value="Четверте">
+            </datalist>
+
+        </fieldset>
+
+        <br>
+
+        <fieldset>
+            <legend>Файл</legend>
+
+            <label for="file">Аудіофайли:</label>
+
+            <input type="file"
+                   id="file"
+                   name="file"
+                   value=""
+                   accept="audio/*"
+                   multiple
+                   tabindex="22">
+
+        </fieldset>
+
+        <br>
+
+        <input type="submit"
+               name="submit"
+               value="Надіслати"
+               tabindex="23">
+
+        <input type="reset"
+               name="reset"
+               value="Очистити"
+               tabindex="24">
+
+    </form>
+
+    <br>
+
+    <h2>POST-запит</h2>
+
+    <form action="questionnaire.html"
+          method="post"
+          enctype="multipart/form-data">
+
+        <input type="submit"
+               name="post"
+               value="Надіслати POST"
+               tabindex="25">
+
+    </form>
+
+    <a href="/lab-03/index.html">Вернутись назад</a>
+</body>
+
+</html>
+
