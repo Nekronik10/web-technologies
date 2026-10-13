@@ -1,0 +1,55 @@
+
+* {
+    font-size: 22px;
+    margin: 10px;
+}
+
+h1 {
+    font-size: 48px;
+    color: red;
+    text-align: center;
+}
+
+h2 {
+    font-size: 36px;
+    font-style: italic;
+    text-align: center;
+    margin: 30px 0 30px 0;
+}
+
+p {
+    text-align: center;
+    margin: 0;
+}
+
+hr {
+    width: 60%;
+    height: 8px;
+    background-color: green;
+    border: none;
+    margin: 20px auto;
+}
+
+#footer {
+    font-family: "Comic Sans MS", "Courier New";
+    font-style: italic;
+    line-height: 1.6;
+}
+
+
+.name {
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.plus {
+    text-decoration: underline;
+}
+
+.old {
+    text-decoration: line-through;
+}
+
+.hint {
+    background-color: yellow;
+}
