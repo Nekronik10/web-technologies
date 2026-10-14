@@ -10,19 +10,19 @@ ul li ul {
     list-style-type: none;
 }
 
-.square {
+.list-square {
     list-style-type: square;
 }
 
-.check {
+.list-check {
     list-style-type: "✔ ";
 }
 
-.square a {
+.list-square a {
     text-decoration: none;
 }
 
 
-ol {
+.list-inside {
     list-style-position: inside;
 }
