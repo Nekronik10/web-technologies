@@ -24,7 +24,7 @@ section > p {
 }
 
 li > ul {
-    list-style-image: url("marker.svg");
+    list-style-image: url("/lab-04/li.svg");
 }
 
 div > p.text-background {
