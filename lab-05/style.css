@@ -1,69 +1,81 @@
-.color-div {
+.trip-div {
     background-color: rgb(255, 165, 0);
     width: 500px;
     padding: 20px;
+    margin: auto;
     color: #fff;
 }
 
-h1 {
+.trip-title{
     font-size: 25px;
     font-weight: 900;
     margin-bottom: 10px;
 }
 
-ul {
+.travel-list {
     list-style-type: none;
     list-style-position: inside;
     margin: 0;
     padding: 0;
 }
 
-ul li {
+.travel-item {
     background-image: url("img/rule.svg");
     background-position: left center;
     background-repeat: no-repeat;
     background-size: 35px 35px;
 }
 
-.list-level1 > li {
+.travel-item {
     background-color: rgb(103, 158, 128);
     padding: 0 20px 0 50px;
     background-position: 5px 5px;
 }
 
-.list-level2 {
+.stages-list {
     font-size: 18px;
     font-style: italic;
+    list-style: none;
 }
 
-.list-level2 > li {
+.stages-list > li {
     background-color: rgb(153, 180, 102);
     background-position: 3px center;
     padding-left: 40px;
     margin-bottom: 10px;
 }
 
-.list-level2 > .phone  { background-image: url("img/ad_units.svg"); }
-.list-level2 > .ticket { background-image: url("img/airplane_ticket.svg"); }
-.list-level2 > .hotel  { background-image: url("img/hotel.svg"); }
-.list-level2 > .car    { background-image: url("img/car_rental.svg"); }
-.list-level2 > .bar    { background-image: url("img/local_bar.svg"); }
-.list-level2 > .casino { background-image: url("img/casino.svg"); }
-.list-level2 > .museum { background-image: url("img/museum.svg"); }
-.list-level2 > .festival { background-image: url("img/festival.svg"); }
+.stages-list > .phone  { background-image: url("img/ad_units.svg"); }
+.stages-list > .ticket { background-image: url("img/airplane_ticket.svg"); }
+.stages-list > .hotel  { background-image: url("img/hotel.svg"); }
+.stages-list > .car    { background-image: url("img/car_rental.svg"); }
+.stages-list > .bar    { background-image: url("img/local_bar.svg"); }
+.stages-list > .casino { background-image: url("img/casino.svg"); }
+.stages-list > .museum { background-image: url("img/museum.svg"); }
+.stages-list > .festival { background-image: url("img/festival.svg"); }
 
-span {
+.stages-item {
     padding: 10px 20px;
     display: inline-block;
 }
 
-.list-level1 > li > span {
+.travel-item > span {
     font-size: 20px;
     font-weight: 700;
     background-color: rgb(199, 124, 106);
     margin-bottom: 10px;
 }
 
-.list-level2 > li > span {
+.stages-list > li > span{
     background-color: rgb(218, 106, 32);
+}
+
+
+.stages-list {
+    padding: 0;
+}
+
+.stages-list > li {
+    background-repeat: no-repeat;
+    background-size: 25px 25px;
 }
