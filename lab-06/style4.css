@@ -1,0 +1,132 @@
+* {
+    box-sizing: border-box;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+ul {
+    list-style: none;
+}
+
+.nav-horizontal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: #555;
+}
+
+.nav-item {
+    float: left;
+    background: #555;
+    text-align: center;
+}
+
+.nav-item:last-child {
+    float: right;
+}
+
+.nav-link {
+    display: block;
+    padding: 15px 30px;
+    color: #fff;
+    text-decoration: none;
+}
+
+.nav-icon {
+    font-size: 36px;
+}
+
+.nav-item:hover {
+    background: #777;
+}
+
+.nav-item--active,
+.nav-item--active:hover {
+    background: #66ad5e;
+}
+
+.nav-item--parent {
+    position: relative;
+}
+
+.nav-submenu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    visibility: hidden;
+    width: 160px;
+    background: #555;
+}
+
+.nav-item--parent:hover > .nav-submenu {
+    visibility: visible;
+}
+
+.nav-sublink {
+    display: block;
+    padding: 12px 20px;
+    color: #fff;
+    text-align: left;
+    text-decoration: none;
+}
+
+.nav-subitem:hover {
+    background: #777;
+}
+
+
+.nav-vertical {
+    margin-top: 200px;
+    position: fixed;
+    top: 66px;
+    left: 0;
+    width: 220px;
+    background: #2f6bb3;
+}
+
+.nav-vertical .nav-item {
+    float: none;
+    background: #2f6bb3;
+    text-align: left;
+    border-bottom: 1px solid #8fb4e3;
+}
+
+.nav-vertical .nav-link {
+    height: 56px;
+    padding: 0 16px;
+    line-height: 56px;
+}
+
+.nav-vertical .nav-icon {
+    display: inline-block;
+    margin-right: 14px;
+    font-size: 24px;
+    vertical-align: middle;
+}
+
+.nav-vertical .nav-item:hover {
+    background: #3f7fcc;
+}
+
+.nav-vertical .nav-item--active,
+.nav-vertical .nav-item--active:hover {
+    background: #1d4f91;
+}
+
+
+.nav-vertical .nav-submenu {
+    top: 0;
+    left: 100%;
+    width: 200px;
+    background: #2f6bb3;
+}
+
+.nav-vertical .nav-subitem {
+    border-bottom: 1px solid #8fb4e3;
+}
+
+.nav-vertical .nav-subitem:hover {
+    background: #3f7fcc;
+}

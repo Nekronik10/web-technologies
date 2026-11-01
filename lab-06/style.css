@@ -1,0 +1,54 @@
+.main-block{
+    position: relative;
+    margin-top: 150px;
+    margin-left: 200px;
+}
+
+.main-block div{
+    display: inline-block;
+}
+
+.block-1{
+    color: #fff;
+    background-color: blue;
+    border: 3px solid black;
+    padding: 15px 30px 20px;
+    text-align: center;
+    width: 130px;
+    position: absolute;
+    left: -120px;
+    top: -40px;
+}
+
+.block-2{
+    color: black;
+    background-color: aqua;
+    border: 3px solid black;
+    padding: 40px 30px 40px;
+    text-align: center;
+    width: 200px;
+    margin-right: 40px;
+}
+
+.block-3{
+    color: #fff;
+    background-color: blue;
+    border: 3px solid black;
+    padding: 15px 30px 20px;
+    text-align: center;
+    width: 120px;
+    position: absolute;
+    left: 200px;
+    top: -40px;
+}
+
+.block-4{
+    color: black;
+    background-color: aqua;
+    border: 3px solid black;
+    padding: 40px 30px 40px;
+    text-align: center;
+    width: 200px;
+}
+
+

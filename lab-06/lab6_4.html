@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="style4.css">
+    <title>Nav</title>
+</head>
+<body>
+    <nav class="nav nav-horizontal">
+        <ul class="nav-list">
+            <li class="nav-item nav-item--active nav-item--parent">
+                <a class="nav-link" href="#" title="Головна">
+                    <span class="material-symbols-outlined nav-icon">home</span>
+                </a>
+                <ul class="nav-submenu">
+                    <li class="nav-subitem"><a class="nav-sublink" href="#">Пункт 1</a></li>
+                    <li class="nav-subitem"><a class="nav-sublink" href="#">Пункт 2</a></li>
+                    <li class="nav-subitem"><a class="nav-sublink" href="#">Пункт 3</a></li>
+                </ul>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#" title="Пошук">
+                    <span class="material-symbols-outlined nav-icon">search</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#" title="Пошта">
+                    <span class="material-symbols-outlined nav-icon">mail</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#" title="Профіль">
+                    <span class="material-symbols-outlined nav-icon">person</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+
+    
+    <nav class="nav nav-vertical">
+        <ul class="nav-list">
+            <li class="nav-item nav-item--active">
+                <a class="nav-link" href="#">
+                    <span class="material-symbols-outlined nav-icon">home</span>
+                    <span class="nav-text">Home</span>
+                </a>
+            </li>
+            <li class="nav-item nav-item--parent">
+                <a class="nav-link" href="#">
+                    <span class="material-symbols-outlined nav-icon">article</span>
+                    <span class="nav-text">About</span>
+                </a>
+                <ul class="nav-submenu">
+                    <li class="nav-subitem"><a class="nav-sublink" href="#">Пункт 1</a></li>
+                    <li class="nav-subitem nav-item--parent">
+                        <a class="nav-sublink" href="#">Пункт 2</a>
+                        <ul class="nav-submenu">
+                            <li class="nav-subitem"><a class="nav-sublink" href="#">Пункт 2.1</a></li>
+                            <li class="nav-subitem"><a class="nav-sublink" href="#">Пункт 2.2</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-subitem"><a class="nav-sublink" href="#">Пункт 3</a></li>
+                </ul>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">
+                    <span class="material-symbols-outlined nav-icon">coffee</span>
+                    <span class="nav-text">Work With Me</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+
+</body>
+</html>

@@ -1,0 +1,47 @@
+.main-block{
+    margin-top: 170px;
+    margin-left: 300px;
+    position: relative;
+}
+
+.main-block div:nth-child(1), .main-block div:nth-child(3){
+    display: inline-block;
+}
+
+.block-1{
+    color: black;
+    border: 2px solid black;
+    background-color: rgb(40, 206, 14);
+    padding: 10px 40px;
+}
+
+.block-1:hover + .block-2{
+    opacity: 1;
+}
+
+.block-2{
+    color: #fff;
+    border: 2px solid black;
+    background-color: rgb(16, 140, 177);
+    padding: 10px 40px 100px;
+    text-align: center;
+    margin-top: 10px;
+    width: 586px;
+    position: absolute;
+    opacity: 0;
+}
+
+.block-2:hover + .block-3{
+    visibility: visible;
+}
+
+.block-3{
+    color: #fff;
+    border: 2px solid black;
+    background-color: rgb(103, 6, 110);
+    padding: 10px 40px;
+    visibility: hidden;
+}
+
+
+
