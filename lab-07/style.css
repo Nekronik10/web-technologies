@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    --main-gray: rgb(63, 62, 62);
+    --light-gray: rgb(93, 93, 93);
+}
+
+
+body {
+    font-family: "Roboto", sans-serif;
+}
+
+.weather-card {
+    margin: 0 auto;
+    width: 500px;
+    background-color: #fff;
+    border: 2px solid #000;
+    border-radius: 10px;
+    padding: 10px 20px;
+}
+
+.weather-city{
+    color: var(--main-gray);
+    font-weight: 400;
+    font-size: 45px;
+}
+
+.weather-date,
+.weather-condition{
+    color: var(--light-gray);
+    margin-top: 5px;
+    font-size: 17px;
+}
+
+.weather-body{
+    display: flex;  
+}
+
+.weather-now{
+    display: flex;
+}
+
+.weather-icon{
+    height: 100px;
+    margin-right: 10px;
+}
+
+.weather-temp{
+    padding-top: 5px;
+    font-size: 50px;
+    color: var(--main-gray);
+    margin-right: 2px;
+}
+
+.weather-unit{
+    padding-top: 12px;
+    font-size: 17px;
+    color: var(--light-gray);
+}
+
+
+.weather-details{
+    list-style: none;
+    margin-left: 40px;
+}
+
+.weather–detail{
+    padding-bottom: 5px;
+}
+
+.weather-label{
+    color: var(--light-gray);
+}
+
+.weather-value{
+    color: var(--main-gray);
+    font-size: 16px;
+}
+
+
+
+
+.forecast {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.forecast__day {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px 15px;
+    border-top: 1px solid var(--light-gray);
+}
+
+.forecast__day:last-child{
+    border-bottom: 1px solid var(--light-gray);
+}
+
+.forecast__name {
+    flex-basis: 100px;
+    font-size: 18px;
+    font-weight: 500;
+    color: var(--main-gray);
+}
+
+.forecast__icon {
+    width: 50px;
+    height: 50px;
+}
+
+.forecast__temps {
+    display: flex;
+    flex-direction: column;
+    line-height: 25px;
+}
+
+.forecast__high {
+    font-size: 18px;
+    font-weight: 400;
+    color: var(--main-gray);
+}
+
+.forecast__low {
+    font-size: 18px;
+    font-weight: 300;
+    color: var(--light-gray);
+}
+
+.forecast__pollen {
+    font-size: 18px;
+    font-weight: 300;
+    color: var(--light-gray);
+}
+
+.forecast__pollen b {
+    font-weight: 400;
+    color: var(--main-gray);
+}
