@@ -20,3 +20,24 @@
   grid-row: span 2;
 }
 
+@media (max-width: 768px) {
+  .gallery {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: none;
+    grid-auto-rows: 140px;
+    height: auto;
+  }
+  .big {
+    grid-column: 1 / 4;
+  }
+}
+
+@media (max-width: 576px) {
+  .gallery {
+    grid-template-columns: 1fr;
+    grid-auto-rows: 180px;
+  }
+  .big {
+    grid-column: 1;
+  }
+}
