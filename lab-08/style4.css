@@ -1,0 +1,36 @@
+.tree {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr); 
+  gap: 5px;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 5px;
+  background: #fff;
+}
+
+.tree div {
+  counter-increment: num;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 45px;
+  background: #ffd93d;
+  color: #fff;
+  font-family: serif;
+  font-size: 32px;
+}
+
+.tree div::before {
+  content: counter(num);
+}
+
+.tree div:nth-child(1) { grid-column: span 12; }
+
+.tree div:nth-child(n+2):nth-child(-n+3) { grid-column: span 6; }
+
+.tree div:nth-child(n+4):nth-child(-n+6) { grid-column: span 4; }
+
+.tree div:nth-child(n+7):nth-child(-n+10) { grid-column: span 3; }
+
+.tree div:nth-child(n+11):nth-child(-n+16) { grid-column: span 2; }
+
